@@ -1,8 +1,7 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
+<%@page isELIgnored="false"%>
 
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -15,33 +14,23 @@
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous">
 
-<link href="<c:url value="/resources/css/Style.css"/>" />
-<script src="<c:url value="/resources/js/Script.js"/>"></script>
-
-
-
-<title>Hello world</title>
+<title>Error page</title>
 </head>
-<body style="background-color: blue">
-<%-- 	<img alt="My image" src="<c:url value="/resources/image/h.jpeg"/>"> --%>
-	<div class="container  mx-auto mt-5">
-		<div class="card mx-auto mt-5" style="width: 50%;">
-			<div class="card-body py-5">
-				<h3 class="text-center text-black"
-					style="text-transform: uppercase;">My Search</h3>
-				<hr style="background-color: black;">
-				<form action="search" class="mt-5">
-					<div class="form-group">
-						<input type="text" name="querybox"
-							placeholder="Enter your keyword" class="form-control">
-					</div>
-					<div class="container text-center">
-						<button class="btn btn-success">Search</button>
-					</div>
-				</form>
-			</div>
-		</div>
+<body>
+<div class="container">
+	<div class="text-center">
+		<h1>Oops! Sorry</h1>
+		<h2 style="color: red;">${msg }</h2>
 
+		<h6>Sorry,an error has occured,Requested page not found</h6>
+	</div>
+<br>
+	<div class="text-center">
+		<a href="#" class="link-primary" style="margin-right: 30px;">Go To Home page</a>
+	
+		 <a href="#" class="link-primary" >Contact Us</a>
+		
+	</div>
 	</div>
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
